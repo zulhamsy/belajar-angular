@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "cross-env NODE_ENV=development ng serve",
+    "build": "cross-env NODE_ENV=production ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -29,6 +29,7 @@
     "@types/jasmine": "~3.10.0",
     "@types/node": "^12.11.1",
     "autoprefixer": "^10.4.0",
+    "cross-env": "^7.0.3",
     "jasmine-core": "~3.10.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",
